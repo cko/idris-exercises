@@ -1,5 +1,9 @@
+# Idris Exercises
+
+Solutions for the exercises in "Type-Driven Development with Idris" by Edwin Brady 
 
 
-Starting a GHC-7 environment in NixOS unstable: 
+## Installing Idris on NixOS unstable: 
 
     nix-shell -p haskell.compiler.ghc7103 zlib
+    cabal install idris --allow-newer
