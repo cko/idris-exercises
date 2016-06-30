@@ -17,3 +17,9 @@ top_ten l = take 10  $ sort l
 
 over_length : Nat -> List String -> Nat
 over_length n l = length (filter (\a =>length a > n) l)
+
+show_palindrome : String -> String
+show_palindrome str = show (palindrome str)  ++ "\n"
+
+main : IO ()
+main = repl "Test for palindrome: " show_palindrome
